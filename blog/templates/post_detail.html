@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="static/styles.css">
+{% block content %}
+<p class="post_title">{{post.title}}</p>
+<p class="post_date">{{post.created_at}}</p>
+<p class="post_content">{{post.content}}</p>
+<a class="btn" href="{% url 'post_edit' post.id%}">Edit</a>
+
+{% endblock %}
