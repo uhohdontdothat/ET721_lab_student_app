@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% block content %}
+    {% load static %}
+    <main class="maincontainer">
+        <section>
+            <nav>
+                <a class="upload_img_btn" href="{% url 'add_post' %}">Upload Images</a>
+            </nav>
+        </section>
+
+        <section class="albumcontainer">
+            {% for post in object_list %}
+            <div class="card">
+                <p class="card_title">{{post.title}}</p>
+                <div class="card_img">
+                    <img src="{{post.image.url}}" alt="image of {{post.title}}"/>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+    </main>
+{% endblock %}

@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
-<link rel="stylesheet" href="static/styles.css">
 {% block content %}
+<header>
+    <nav class="urls">
+        <a href="{% url 'post_create' %}">Create New Post</a>
+    </nav>
+</header>
 <h2 class="header">All Posts</h2>
 
 {% for post in posts %}

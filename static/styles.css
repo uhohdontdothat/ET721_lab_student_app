@@ -1,0 +1,83 @@
+*{box-sizing: border-box;}
+img{width: 100%; display: block;}
+/* Style for To-Do List */
+.maincontainer{
+    width: 800px;
+    background: aliceblue;
+    margin: 5rem auto;
+    padding: 2rem;
+}
+.apptitle{
+    text-align: center;   
+}
+.dolistform, .formgroup{
+    margin-top: 2rem;
+}
+.todo_text{
+    background-color: white;
+    padding: 0.5;
+    width: 60%;
+}
+.btnaddlist{
+    background-color: greenyellow;
+    padding: 0.5rem 1rem;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+}
+.btndeleteeach, .btndeleteall{
+    width: 40%;
+    margin: 2%;
+    padding: 0.5rem;
+    border: none;
+}
+.btndeleteeach{
+    background-color: orange;
+    text-align: center;
+    color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+.btndeleteall{
+    background-color: darkorange;
+    text-align: center;
+    color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btndeleteeach:hover, .btndeleteall:hover{
+    background-color: darkred;
+    color: white;
+}
+.btnaddlist:hover{
+    background-color:green;
+    color: white;
+}
+.dolist_list{
+    background-color: white;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: solid gray 1px;
+}
+.listitem{
+    list-style: none;
+    padding: 1rem;
+    background-color: rgb(230,230,230);
+}
+.completed{
+    color: whitesmoke;
+    text-decoration: line-through;
+    background-color: rgb(50,50,50);
+}
+.linkitem{
+    text-decoration: none;
+    color: rgb(50,50,50);
+}
+.linkitem:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+

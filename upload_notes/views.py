@@ -7,10 +7,10 @@ from .models import Notes
 # Create your views here.
 class HomePageView(ListView):
     model = Notes
-    template_name = 'base.html'
+    template_name = 'image_list.html'
 
 class CreatePostView(CreateView):
     model = Notes
     form_class = NotesForm
     template_name = 'post.html'
-    success_url = reverse_lazy('base')
+    success_url = reverse_lazy('image_list')

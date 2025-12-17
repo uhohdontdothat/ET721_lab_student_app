@@ -24,7 +24,6 @@ class Migration(migrations.Migration):
                 ),
                 ("text", models.CharField(max_length=255)),
                 ("completed", models.BooleanField(default=False)),
-                ("due_date", models.DateTimeField()),
             ],
         ),
     ]
